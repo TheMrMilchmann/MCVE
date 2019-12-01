@@ -13,3 +13,11 @@ javac --source-path ./src/consumer/java -d ./build/consumer/classes --module-pat
 // This one does not
 javac --release 9 --source-path ./src/consumer/java -d ./build/consumer/classes --module-path ./build/library.jar ./src/consumer/java/module-info.java
 ```
+
+Compiler output
+```
+.\src\consumer\java\module-info.java:2: warning: requires transitive directive for an automatic module
+    requires transitive com.example.library;
+                                   ^
+1 warning
+```
