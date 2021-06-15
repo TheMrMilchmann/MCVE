@@ -1,7 +1,7 @@
-I put  this together before I found the issue: https://github.com/Kotlin/kotlinx.serialization/issues/967
-Anyway, building the project fails.
+I put  this together before I found the issue: https://github.com/Kotlin/kotlinx.serialization/issues/967.
+Anyway, building the project fails with an rather obscure exception.
 
-    ./gradlew buil
+    ./gradlew build
 
 ```
 org.jetbrains.kotlin.js.facade.exceptions.TranslationRuntimeException: Unexpected error occurred compiling the following fragment: 'import kotlinx.serialization.*
