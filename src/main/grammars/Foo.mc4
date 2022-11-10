@@ -1,0 +1,12 @@
+/* (c) https://github.com/MontiCore/monticore */
+
+grammar Foo {
+
+    interface Expression;
+	
+	BinaryExpression implements Expression
+		= Expression "+" Expression;
+
+	ImplExpression implements Expression = "Impl";
+
+}

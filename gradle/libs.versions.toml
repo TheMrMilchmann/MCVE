@@ -1,0 +1,13 @@
+[versions]
+monticore = "7.4.0-SNAPSHOT"
+
+
+[libraries]
+# de.monticore - MontiCore
+monticore-grammar = { module = "de.monticore:monticore-grammar", version.ref = "monticore" }
+monticore-runtime = { module = "de.monticore:monticore-runtime", version.ref = "monticore" }
+
+
+[plugins]
+# monticore - MontiCore
+monticore = { id = "monticore", version.ref = "monticore" }
