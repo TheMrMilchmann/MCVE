@@ -1,0 +1,1 @@
+rootProject.name = "lwjgl-native-module-test"

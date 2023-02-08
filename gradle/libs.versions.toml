@@ -1,0 +1,33 @@
+[versions]
+binary-compatibility-validator = "0.12.1"
+dokka = "1.7.20"
+gradle-toolchain-switches = "0.2.0"
+junit = "5.9.2"
+kotlin = "1.8.0"
+kotlinx-serialization = "1.4.1"
+
+
+[libraries]
+# org.junit - JUnit
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+
+# org.jetbrains.kotlinx:kotlinx-serialization-[...] - kotlinx.serialization
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+
+
+[plugins]
+# io.github.themrmilchmann.gradle.toolchainswitches:gradle-toolchain-switches - Gradle Toolchain Switches Plugin
+gradle-toolchain-switches = { id = "io.github.themrmilchmann.toolchain-switches", version.ref = "gradle-toolchain-switches" }
+
+# org.jetbrains.kotlinx.binary-compatibility-validator - binary-compatibility-validator
+binary-compatibility-validator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "binary-compatibility-validator" }
+
+# org.jetbrains.dokka - dokka
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+
+# org.jetbrains.kotlin - Kotlin Gradle plugin
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
