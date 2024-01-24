@@ -1,0 +1,29 @@
+{
+  "name": "committing-crimes.com",
+  "private": true,
+  "scripts": {
+    "build": "nuxi build",
+    "clean": "nuxi cleanup",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare",
+    "test": "npx playwright test --browser=all"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.11.0",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@playwright/test": "^1.41.1",
+    "@types/node": "^18.19.8",
+    "@types/rss": "^0.0.32",
+    "nuxt": "^3.9.3",
+    "nuxt-jsonld": "^2.0.8",
+    "rss": "^1.2.2",
+    "sitemap": "^7.1.1",
+    "typescript": "^5.3.3",
+    "vue-tsc": "^1.8.27"
+  },
+  "dependencies": {
+    "date-fns": "^3.3.1"
+  }
+}

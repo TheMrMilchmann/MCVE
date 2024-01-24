@@ -1,0 +1,16 @@
+!/.idea
+/.idea/*
+!/.idea/copyright
+!/.idea/runConfigurations
+!/.idea/scopes
+!/.idea/icon.png
+
+/.nuxt
+/.nitro
+/.cache
+/.output
+/.env
+
+/dist
+/node_modules
+/preview
